@@ -4,7 +4,8 @@ import PropTypes from "prop-types";
 export function ListarItems(props) {
 	return (
 		<li className="list-group-item d-flex justify-content-between">
-			<p>{props.list}</p>
+			<p>{props.item}</p>{" "}
+			{/* aqui coloque item que viene del componente padre */}
 			<div
 				className="cursor-pointer"
 				onClick={() => props.deleteId(props.idBorrar)}>
@@ -15,7 +16,7 @@ export function ListarItems(props) {
 }
 
 ListarItems.propTypes = {
-	list: PropTypes.string,
+	item: PropTypes.string,
 	idBorrar: PropTypes.number,
 	deleteId: PropTypes.func
 };
