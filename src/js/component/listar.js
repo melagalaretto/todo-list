@@ -3,8 +3,10 @@ import PropTypes from "prop-types";
 
 export function ListarItems(props) {
 	return (
-		<li className="list-group-item d-flex justify-content-between">
-			<p>{props.item}</p>{" "}
+		<li
+			className="list-group-item d-flex justify-content-between"
+			id="list">
+			<p>{props.item}</p>
 			{/* aqui coloque item que viene del componente padre */}
 			<div
 				className="cursor-pointer"
