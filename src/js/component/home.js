@@ -86,6 +86,7 @@ export function Home() {
 						/>
 					);
 				})}
+				<p>{list.length} tareas agregadas</p>
 				{showError ? <h1>Algo salió mal</h1> : null}
 			</div>
 		</div>
